@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hours</title>
+    <link rel="stylesheet" href="(CSMOTION).css" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h1">Hours</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a href="(MOTION)PP.html">Home</a>
+                </li>
+                <li>
+                    <a href="/#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="(MOTION2)PP.html">About</a>
+                </li>
+                <li>
+                    <a href="(MOTION4)PP.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <figure>
+            <img src="img/tacos_tray_1000x667.png" alt="tacos_tray_1000x667" title="Taco Trazzzyyy" width="1000" height="667">
+            <figcaption class="offscreen">
+                Ayoooooo bruda!
+            </figcaption>
+        </figure>
+    </section>
+    <main class="main">
+        <article id="hours" class="main__article">
+            <h2>Hours</h2>
+            <p>
+                We're open 7 days a week!
+            </p>
+            <dl>
+                <dt>Sunday - Thursday</dt>
+                <dd> <time datetime="11:00">11AM</time> - <time datetime="21:00">9AM</time> </dd>
+                <dt>Friday - Saturday</dt>
+                <dd> <time datetime="11:00">11AM</time> - <time datetime="23:00">11AM</time> </dd>
+            </dl>
+        </article>
+    </main>
+    <footer class="footer">
+        <span class="nowrap">Copyright &copy;</span><span class="nowrap">The Little Taco Shop</span>
+    </footer>
+</body>
+</html>
