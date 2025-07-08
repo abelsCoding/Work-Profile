@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="(CSMOTION).css" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h1">About</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a href="(MOTION)PP.html">Home</a>
+                </li>
+                <li>
+                    <a href="/#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="(MOTION3)PP.html">Hours</a>
+                </li>
+                <li>
+                    <a href="(MOTION4)PP.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <figure>
+            <img src="../LIL TAC SHOP/REL TACO/" alt="tacos_delicioso_1000x667" title="Dededededelishiousoooo" width="1000" height="667">
+            <figcaption class="offscreen">
+                Did you pray today?
+            </figcaption>
+        </figure>
+    </section>
+    <main class="main">
+        <article id="about" class="main__article about">
+            <h2>About LTS</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto molestias, hic obcaecati minus ut magni voluptatibus animi in totam ratione atque asperiores cumque nam aperiam libero perspiciatis impedit distinctio ipsum.
+            </p>
+            <h2>Taco Trivia</h2>
+            <aside class="about__trivia">
+                <details>
+                    <summary>When did the <mark>Little Taco Shop</mark> come to Abuja</summary>
+                    <p class="about__trivia-answer">
+                        it's been a long ass mofuckn day broooooo
+                    </p>
+                </details>
+            </aside>
+        </article>
+    </main>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy;</span><span class="nowrap">The Little Taco Shop</span>
+        </p>
+    </footer>
+    
+</body>
+</html>
