@@ -1,0 +1,115 @@
+#include <iostream>
+#include <iomanip>
+
+
+void showBalance(double balance);
+double deposit();
+double withdrawal(double balance);
+
+int main(){
+
+    double balance = 0;
+
+    int choice;
+
+    
+    do{
+        std::cout << "\n****************************** BANK APP ******************************\n";
+    
+        std::cout << "Enter choice: \n\n";
+        std::cout << "1. Show Balance: \n";
+        std::cout << "2. Deposit: \n";
+        std::cout << "3. Withdrawal: \n";
+        std::cout << "4. Exit: \n";
+    
+        std::cout << "Choice: ";
+        std::cin >> choice;
+
+        std::cin.clear();
+        fflush(stdin);
+
+        switch(choice){
+
+        case 1:
+            showBalance(balance);
+            break;
+        case 2:
+            balance += deposit();
+            showBalance(balance);
+            break;
+        case 3:
+            balance -= withdrawal(balance);
+            showBalance(balance);
+            break;
+        case 4:
+            std::cout << "Thanks for stopping by!";
+            break;
+        default:
+            std::cout << "Enter valid input ";
+            break; 
+
+        }
+        
+        
+    }while(choice != 4);
+
+
+    std::cout << "\n****************************** BANK APP ******************************\n";
+
+    return 0;
+
+}
+
+
+void showBalance(double balance){
+
+    std::cout << "Balance: $" << std::setprecision(2) <<std::fixed << balance;
+
+};
+
+double deposit(){
+
+    double amount = 0;
+    std::cout << "Enter desired deposit amount: ";
+    std::cin >> amount;
+
+    if (amount > 0){
+        return amount;
+
+    }
+
+    else{
+        std::cout << "Invalid amount";
+        return 0;
+    }
+
+
+};
+
+double withdrawal(double balance){
+
+    double amount = 0;
+    std::cout << "Enter desired witdrawal amount: ";
+    std::cin >> amount;
+
+    if (amount > balance){
+        
+        std::cout << "Insufficeint funds big bro";
+        return 0;
+
+    }
+
+    else if(amount < 0){
+
+        std::cout << "Impossible action. User can only withdrawl positive value";
+        return 0;
+
+    }
+
+    else{
+        
+        return amount;
+    }
+
+
+}
